@@ -1,0 +1,27 @@
+<div class="developers">
+  <h2 class="developers-title">Developers</h2>
+  <ul class="developers-list">
+    <li *ngFor="let developer of developers" class="developers-item">
+      <h3 class="developers-item-name">
+        {{developer.name}}
+      </h3>
+      <div class="developers-item-link">
+        <button routerLink="/developers/{{developer.id}}">
+          Edit Profile
+        </button>
+      </div>
+    </li>
+  </ul>
+  <div class="developers-add">
+    <h3>Add new developer</h3>
+    <label>
+      Name:
+      <input #developerName />
+    </label>
+    <button
+      (click)="add(developerName.value); developerName.value=''"
+    >
+      Add
+    </button>
+  </div>
+</div>

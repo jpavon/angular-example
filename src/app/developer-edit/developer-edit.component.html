@@ -1,0 +1,18 @@
+<div class="developer-edit">
+  <div class="developer-back">
+    <button (click)="goBack()">< Go back</button>
+  </div>
+  <h2 class="developer-edit-title">
+    Editing {{ developer.name }}
+  </h2>
+  <div class="developer-edit-content">
+    <label>
+      Name:
+      <input [(ngModel)]="developer.name" placeholder="name" />
+    </label>
+    <label>
+      Description:
+      <textarea [(ngModel)]="developer.description" placeholder="description"></textarea>
+    </label>
+  </div>
+</div>

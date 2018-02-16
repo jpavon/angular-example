@@ -1,0 +1,27 @@
+.developers {
+
+}
+
+.developers-title {
+  margin-bottom: 2rem;
+}
+
+.developers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.developers-item {
+  margin-bottom: 2rem;
+}
+
+.developers-item:last-child {
+  margin-bottom: 0;
+}
+
+.developers-add {
+  padding: 20px;
+  background-color: #edeff1;
+  box-shadow: 0 2px 2px 0 #ccc;
+  margin-top: 30px;
+}
